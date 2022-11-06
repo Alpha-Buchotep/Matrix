@@ -1,0 +1,30 @@
+/* ------------------------------ */
+/* Mátrix effekt - Pár stíluselem */
+/* ------------------------------ */
+
+*{margin:0;padding:0;}
+body{background:black;}
+canvas{display:block;}
+
+.gombok {
+	position: fixed;
+    left: 0%;
+    top: 100%;
+    width: auto;
+    height: 45px;
+    margin-left: 10px;
+    margin-top: -55px;
+}
+
+.gomb {
+    left: 0%;
+    top: 100%;
+    width: 169px;
+    height: 45px;
+    background-color: rgb(238 51 139 / 29%);
+    border: 2px solid #ffffff;
+    font-size: 18px;
+    color: #d0d0d0;
+    border-radius: 3px;
+    padding: 4px;
+}

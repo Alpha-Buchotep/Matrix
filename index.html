@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mátrix effekt - Demo">
+	<meta name="Author" content="Jonastos">
+	<link href="css/matrixEffekt.css" rel="stylesheet" />
+	<title>Mátrix effekt - Demo</title>
+</head>
+
+<body>
+<canvas id="vaszon"></canvas>
+<div class="gombok">
+	<button id="matrixStartStop1" class="gomb" onclick="matrixStartStop(1);">MATRIX 1 START</button>
+	<button id="matrixStartStop2" class="gomb" onclick="matrixStartStop(2);">MATRIX 2 START</button>
+	<button id="matrixStartStop3" class="gomb" onclick="matrixStartStop(3);">MATRIX 3 START</button>
+	<button id="matrixStartStop4" class="gomb" onclick="matrixStartStop(4);">MATRIX 4 START</button>
+</div>
+
+<!-- ------------------------------------- -->
+<!-- -- Mátrix effekt - Javascript fájl -- -->
+<!-- ------------------------------------- -->
+
+<script src="js/matrixEffekt.js"></script>
+
+<!-- ------------------------------------- -->
+<!--
+//-------------------------------------------------------------------
+// Meghívási példák
+//
+// Ha a baállítások alatt a tobbPeldany = "igen", 
+// akkor többször is meghívhatjuk a függvényt, ebben az esetben
+// azonban másként viselkednek a függvények
+//-------------------------------------------------------------------
+
+//startMatrix(51, "MATRIX.PRO", "FF0066", "0,0,0,0.02", "Verdana", 12);
+//startMatrix(51, "MATRIX.PRO", "DD9936", "0,0,0,0.03", "Verdana", 12);
+
+// Minden értéket egyedileg állítunk be, nem az alapértelmezett
+// értékeket használjuk
+
+// startMatrix(51, "HELLÓKA!", "FF3636", "0,0,0,0.03", "Arial", 14);
+
+// Csak a betűszín, háttérszín és betűméret beállítása 
+// startMatrix(null, null, "553636", "6,6,6,0.03", null, 12);
+
+// Csak a betűméret változtatása
+// startMatrix(null, null, null, null, null, 14);
+
+// Csak a betűszín és betűtípus változtatása
+// startMatrix(null, null, "272727", null, "Tahoma", 14);
+
+// Csak a szöveg, betűtípus és betűméret változtatása
+// startMatrix("", "Meatrix!", "", "", "Tahoma", 12);
+
+// ------------------------------------------------------
+// Több példányban hívjuk meg az effektet
+//
+// Különböző méretű betűk csak az első átméretezésig 
+// vagy leállításig / illetve újraindításig működnek
+// utána az utoljára meghívott függvényben megadott
+// betűméretre áll be az összes betűtípus
+// ----------------------------------------------------------
+
+// startMatrix(93, "MATRIX.PRO", "FF0066", "9,9,9,0.02", "Verdana", 14);
+// startMatrix(83, "MATRIX.PRO", "DD9966", "9,9,9,0.02", "Verdana", 14);
+
+// startMatrix(90, "MATRIX.PRO", "FF3636", "0,0,0,0.02", "Arial", 18);
+// startMatrix(80, "MATRIX.PRO", "DD9966", "0,0,0,0.03", "Arial", 16);
+// startMatrix(70, "MATRIX.PRO", "00AA66", "0,0,0,0.04", "Arial", 14);
+// startMatrix(60, "MATRIX.PRO", "FF0066", "9,9,9,0.04", "Verdana", 12);
+
+// ------------------------------------------------------
+// Időzítjük a leállítást / indítást > a méretezések miatt kell
+// csak többszörös hívás esetén van értelme
+// ------------------------------------------------------
+
+// setTimeout(stopMatrix, 500);
+// setTimeout(startMatrix, 1000);
+
+// ------------------------------------------------------
+-->
+</body>
+</html>
